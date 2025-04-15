@@ -29,31 +29,62 @@ Research-Assistant/
 - MongoDB
 - Python 3.8+ (for RAG components)
 
-### Installation
+### Quick Setup
 
-1. Clone the repository
+The easiest way to set up the project is to use the setup script:
+
+```bash
+# Make the script executable if needed
+chmod +x setup.sh
+
+# Run the setup script
+./setup.sh
+```
+
+This will install all dependencies and set up the environment files.
+
+### Running the Application
+
+You can start both the frontend and backend with a single command:
+
+```bash
+# Option 1: Using npm
+npm run dev
+
+# Option 2: Using the dev script
+./dev.sh
+```
+
+### Manual Installation
+
+If you prefer to install manually:
+
+1. Install root dependencies:
+   ```
+   npm install
+   ```
+
 2. Install frontend dependencies:
    ```
    cd frontend
    npm install
    ```
+
 3. Install backend dependencies:
    ```
    cd backend
    npm install
    ```
 
-### Running the Application
+### Running Components Separately
 
 1. Start the backend server:
    ```
-   cd backend
-   npm run dev
+   npm run start:backend
    ```
 2. Start the frontend application:
    ```
-   cd frontend
-   npm start
+   npm run start:frontend
    ```
 
 ## License
