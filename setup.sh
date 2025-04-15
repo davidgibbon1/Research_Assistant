@@ -7,6 +7,10 @@ echo "Setting up Research Assistant project..."
 echo "Installing concurrently globally..."
 npm install -g concurrently
 
+# Install cross-env globally to ensure it's available
+echo "Installing cross-env globally..."
+npm install -g cross-env
+
 # Install root dependencies
 echo "Installing root dependencies..."
 npm install
@@ -38,5 +42,10 @@ cd ..
 echo "Creating necessary directories..."
 mkdir -p uploads
 
-echo "Setup complete! You can now run the application with:"
+# Install Electron-specific dependencies
+echo "Installing Electron-specific dependencies..."
+npm install --save-dev electron electron-builder
+npm install --save electron-is-dev
+
+echo "Setup complete! You can now run the desktop application with:"
 echo "npm run dev" 
