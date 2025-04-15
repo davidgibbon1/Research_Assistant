@@ -3,6 +3,10 @@
 # Display welcome message
 echo "Setting up Research Assistant project..."
 
+# Install concurrently globally to ensure it's available
+echo "Installing concurrently globally..."
+npm install -g concurrently
+
 # Install root dependencies
 echo "Installing root dependencies..."
 npm install
